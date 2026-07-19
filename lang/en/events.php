@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'upcoming_events' => 'Upcoming Events',
+    'no_upcoming_events' => 'No Upcoming Events',
+    'past_events' => 'Past Events',
+    'no_past_events' => 'No Past Events',
+    'title' => 'Event Showcase',
+    'description' => 'Through its series of events, AIGIS offers opportunities for collaboration, access to strategic insights, and recognition for sustainable initiatives. Explore the programmes that drive Indonesia’s green industrial transformation.',
+    'available' => 'Available',
+    'ticket_options' => 'Ticket Options',
+    'sold_out' => 'Sold Out',
+    'event_details' => 'Event Details',
+    'date_time' => 'Date & Time',
+    'location' => 'Location',
+    'quota' => 'Quota',
+    'participants' => 'Participants',
+    'remaining' => 'Remaining',
+    'event_agenda' => 'Event Agenda',
+    'download_materi' => 'Download Materi',
+    'register' => 'Registration',
+    'form_register' => 'Registration Form',
+    'desc' => 'Description',
+    'event_desc' => 'Event Description',
+    'join_meeting' => 'Join Meeting',
+    'your_registration_status' => 'Your Registration Status',
+    'your_registration_attend' => 'You are registered to attend',
+    'click_button_join' => 'Click the button below to join the meeting.',
+    'click_button_join_email' => 'The link has also been sent to your email.',
+    'view_e-ticket' => 'View E-Ticket / QR Code',
+    'event_recordings' => 'Event Recordings',
+
+];

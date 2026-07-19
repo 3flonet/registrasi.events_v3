@@ -1,0 +1,33 @@
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/vendor
+/storage/*.key
+/storage/app/public/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*.php
+/storage/logs/*.log
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+homestead.json
+homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+
+# Project specific
+error_log
+scratch_cleanup.php
+
+# AI Generated Analysis
+project_analysis.md
+project_walkthrough.md
+template_section_deep_dive.md
+deployment_guide.md
+localhost_guide.md
