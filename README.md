@@ -9,7 +9,6 @@
 ### 🔌 API Integrations & Connectivity
 ![Midtrans](https://img.shields.io/badge/Midtrans-003580?style=for-the-badge&logo=icloud&logoColor=white)
 ![Meta WhatsApp Cloud API](https://img.shields.io/badge/Meta_WhatsApp_Cloud_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
-![Fonnte WA](https://img.shields.io/badge/Fonnte_WA-25D366?style=for-the-badge&logo=whatsapp&logoColor=gray)
 ![Google Drive](https://img.shields.io/badge/Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
 ![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
 ![Pusher](https://img.shields.io/badge/Pusher-300D4F?style=for-the-badge&logo=pusher&logoColor=white)
