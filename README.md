@@ -1,4 +1,4 @@
-# 🌌 Registrasi.Events v2 — The Future of Event Management
+# 🌌 Registrasi.Events v3 — The Future of Event Management
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![Livewire](https://img.shields.io/badge/Livewire-FB70A9?style=for-the-badge&logo=livewire&logoColor=white)
@@ -8,29 +8,35 @@
 
 ### 🔌 API Integrations & Connectivity
 ![Midtrans](https://img.shields.io/badge/Midtrans-003580?style=for-the-badge&logo=icloud&logoColor=white)
-![Fonnte](https://img.shields.io/badge/Fonnte_WA-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+![Meta WhatsApp Cloud API](https://img.shields.io/badge/Meta_WhatsApp_Cloud_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+![Fonnte WA](https://img.shields.io/badge/Fonnte_WA-25D366?style=for-the-badge&logo=whatsapp&logoColor=gray)
 ![Google Drive](https://img.shields.io/badge/Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)
 ![AWS S3](https://img.shields.io/badge/AWS_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
 ![Pusher](https://img.shields.io/badge/Pusher-300D4F?style=for-the-badge&logo=pusher&logoColor=white)
 
 > **Architecting unforgettable attendee experiences through high-performance tech stacks.**
 
-Welcome to **Registrasi.Events v2**, a next-generation event management ecosystem built for scale, speed, and stunning aesthetics. This platform bridges the gap between complex enterprise requirements and seamless user interactions.
+Welcome to **Registrasi.Events v3**, a next-generation event management ecosystem built for scale, speed, multi-tenant operations, and stunning aesthetics. This platform bridges the gap between complex enterprise requirements and seamless user interactions.
 
 ---
 
 ## 🚀 Key Features
 
+### 🏢 Multi-Tenant / Multi-Organizer System
+Run multiple organizers on a single platform instance:
+- **Tenant Isolation**: Separate event management, media files, and settings for each organizer.
+- **Dynamic PWA Generation**: Automatic branding, metadata, and custom favicon generation according to the active tenant's settings.
+
 ### 🛠️ Advanced Page Builder
-Build stunning landing pages with our **Modular Dynamic Sections**. 
-- **Dynamic Blade Rendering**: Inject logic directly from the database.
-- **Section Templates**: Blueprints for reusable UI components.
+Build stunning landing pages with our **Modular Dynamic Sections**:
+- **Dynamic Blade Rendering**: Inject logic directly from the database dynamically.
+- **Section Templates**: Blueprints for reusable UI components (Hero Bento, Grid Mosaic, etc.).
 - **Translatable Content**: Native multi-language support (ID/EN) using JSON structures.
 
 ### 🎫 Intelligent Ticketing & Check-in
 - **Omni-Channel Entry**: Support for RFID, QR codes, and manual gate management.
-- **WhatsApp Automation**: Real-time check-in alerts via Fonnte API integration.
-- **Automated Invoicing**: Instant PDF generation and email dispatch upon registration.
+- **WhatsApp Automation**: Real-time ticket delivery & check-in alerts powered by **Meta WhatsApp Cloud API** (with legacy fallback support for Fonnte API).
+- **Automated Invoicing & Certificates**: Instant PDF generation and email dispatch upon registration, along with public certificate verification.
 
 ### 📊 Admin Ecosystem
 - **Modular Dashboard**: High-impact grid navigation for mobile-first administration.
@@ -64,10 +70,10 @@ Ensure your environment meets the minimum standards:
 ### 2. Setup
 ```bash
 # Clone the repository
-git clone https://github.com/3flonet/registrasi.events_v2.git
+git clone https://github.com/3flonet/registrasi.events_v3.git
 
 # Enter directory
-cd registrasi.events_v2
+cd registrasi.events_v3
 
 # Install PHP dependencies
 composer install
@@ -80,12 +86,9 @@ cp .env.example .env
 php artisan key:generate
 
 # Run Migrations & Seeders
-```
 php artisan migrate --seed
-```
 
-# Membuat symlink agar file di storage bisa diakses publik
-```
+# Create symlink for public storage access
 php artisan storage:link
 ```
 
@@ -144,7 +147,7 @@ Ada dua cara umum untuk menghubungkan Laravel ke web root cPanel:
 Buka menu **Terminal** di cPanel dan jalankan perintah optimasi:
 ```bash
 cd registrasi_events
-php artisan migrate --force see
+php artisan migrate --force --seed
 php artisan storage:link
 php artisan config:cache
 php artisan route:cache
@@ -161,7 +164,7 @@ Penting agar fitur otomatisasi (pembatalan tiket expired, WA broadcast) berjalan
 
 ## 🛸 The Vision
 
-Registrasi.Events v2 is more than a registration tool; it's a **growth engine** for event organizers. By leveraging cutting-edge web technologies, we ensure that every interaction—from the first visit to the final check-out—is fast, secure, and visually breathtaking.
+Registrasi.Events v3 is more than a registration tool; it's a **growth engine** for event organizers. By leveraging cutting-edge web technologies, we ensure that every interaction—from the first visit to the final check-out—is fast, secure, and visually breathtaking.
 
 ---
 
